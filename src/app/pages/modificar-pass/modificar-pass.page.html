@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar class="degradado">
+    <ion-title>Modificar Contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding magnolia">
+
+
+  <ion-item class="ion-margin-top inputRedondo" >
+      <ion-label position="fixed">Correo</ion-label>
+    <ion-input [(ngModel)]="mdl_correo">
+      <ion-icon name="mail-outline" slot="start"></ion-icon>
+    </ion-input>
+  </ion-item>
+  <ion-item class="ion-margin-top inputRedondo">
+    <ion-label position="fixed">Cont Nueva</ion-label>
+    <ion-input [(ngModel)]="mdl_contrasenaNueva">
+      <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+    </ion-input>
+  </ion-item>
+  <ion-item class="ion-margin-top inputRedondo">
+    <ion-label position="fixed">Cont Antigua</ion-label>
+    <ion-input [(ngModel)]="mdl_contrasenaActual">
+      <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+    </ion-input>
+  </ion-item>
+  
+  <ion-button class="degradado" expand="block" (click)="cambiarContrasena()">
+    <ion-icon name="checkmark-outline" slot="start"></ion-icon>
+    Modificar
+  </ion-button>
+
+  <ion-button class="degradado" expand="block" (click)="volver()">
+    <ion-icon name="arrow-undo-outline" slot="start"></ion-icon>
+    Volver
+  </ion-button>    
+
+</ion-content>

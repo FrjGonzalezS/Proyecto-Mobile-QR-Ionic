@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar class="degradado">
+    <ion-title>Crear Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding magnolia">
+  <div class="ion-text-center ion-padding">
+    <ion-center class="titulo">Crear Usuario</ion-center>
+  </div>
+
+  <ion-item class="ion-margin-top inputRedondo" lines="none">
+      <ion-label position="fixed">Correo</ion-label>
+    <ion-input [(ngModel)]="mdl_correo">
+      <ion-icon name="mail-outline" slot="start"></ion-icon>
+    </ion-input>
+  </ion-item>
+  <ion-item class="ion-margin-top inputRedondo">
+    <ion-label position="fixed">Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="mdl_contrasena">
+      <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+    </ion-input>
+  </ion-item>
+  <ion-item class="ion-margin-top inputRedondo">
+    <ion-label position="fixed">Nombre</ion-label>
+    <ion-input [(ngModel)]="mdl_nombre">
+      <ion-icon name="person" slot="start"></ion-icon>
+    </ion-input>
+  </ion-item>
+  <ion-item class="ion-margin-top inputRedondo">
+    <ion-label position="fixed">Apellido</ion-label>
+    <ion-input [(ngModel)]="mdl_apellido">
+      <ion-icon name="person" slot="start"></ion-icon>
+    </ion-input>
+  </ion-item>
+  
+  <ion-button class="degradado" expand="block" (click)="crear()">
+    <ion-icon name="checkmark-outline" slot="start"></ion-icon>
+    Registrar
+  </ion-button>
+
+  <ion-button class="degradado" expand="block" (click)="volver()">
+    <ion-icon name="home-outline" slot="start"></ion-icon>
+    Inicio
+  </ion-button>    
+
+</ion-content>
